@@ -109,16 +109,25 @@ a:visited {
     height: auto;
   }
 
+  #first_section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
   #first_section h1 {
     color: #3bffff;
-    font-size: 2rem;
+    font-size: 5rem;
     grid-column: 5 / 7;
-    grid-row: 4;
+    grid-row: 2;
+    margin-top: 1.8rem;
   }
   #first_section p {
     color: #3bffff;
+    font-size: 1.5rem;
     grid-column: 6 / 8;
-    grid-row: 5;
+    grid-row: 3;
+    margin-left: 3rem;
   }
 
   header {
@@ -126,7 +135,7 @@ a:visited {
     background: rgb(0, 0, 0);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   #video_2 {
     display: none;
   }
