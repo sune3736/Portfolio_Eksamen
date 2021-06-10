@@ -121,14 +121,14 @@ a:visited {
     font-size: 5rem;
     grid-column: 5 / 7;
     grid-row: 2;
-    margin-top: 1.8rem;
+    margin-top: 2.8rem;
   }
   #first_section p {
     color: #3bffff;
     font-size: 1.5rem;
     grid-column: 6 / 8;
     grid-row: 3;
-    margin-left: 1.8rem;
+    margin-left: 1.6rem;
   }
 
   header {
@@ -176,3 +176,32 @@ a:visited {
     background: rgb(0, 0, 0);
   }
 }
+
+/* @media (orientation: portrait) and (max-width: 667px) {
+  #video_2 {
+    display: none;
+  }
+
+  #video {
+    display: block;
+    grid-column: 1/9;
+    grid-row: 1/4;
+    width: 50vw;
+    height: auto;
+  }
+
+#first_section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  }
+  #first_section p {
+    color: #3bffff;
+    font-size: 2rem;
+    grid-column: 6 / 8;
+    grid-row: 4;
+    margin-left: 5rem;
+  }
+} */
