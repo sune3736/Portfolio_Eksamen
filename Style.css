@@ -79,7 +79,7 @@ a:visited {
   font-family: forgotten_rg;
   color: #3bffff;
   font-size: 3.5rem;
-  grid-column: 4 / 7;
+  grid-column: 3 / 7;
   grid-row: 3;
   margin-top: 1.8rem;
 }
@@ -87,8 +87,9 @@ a:visited {
 #first_section p {
   font-family: forgotten_rg;
   color: #3bffff;
-  grid-column: 6 / 8;
+  grid-column: 5 / 8;
   grid-row: 4;
+  margin-left: 1.2rem;
 }
 
 @media (max-width: 767px) {
