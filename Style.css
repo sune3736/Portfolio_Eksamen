@@ -141,18 +141,25 @@ a:visited {
   header nav ul {
     justify-content: space-evenly;
   }
+  #first_section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
 
   #first_section h1 {
     color: #3bffff;
     font-size: 8rem;
     grid-column: 5 / 7;
-    grid-row: 3;
+    grid-row: 2;
+    margin-top: 1.8rem;
   }
   #first_section p {
     color: #3bffff;
     font-size: 2rem;
-    grid-column: 7 / 8;
-    grid-row: 4;
+    grid-column: 6 / 8;
+    grid-row: 3;
+    margin-left: 5rem;
   }
   header {
     padding: 2rem 11.5rem;
