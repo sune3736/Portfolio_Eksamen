@@ -33,21 +33,25 @@ h1 {
   font-family: forgotten_rg, Verdana, sans-serif;
   color: #3bffff;
   font-size: 3.5rem;
+  z-index: 10;
 }
 
 h2 {
   font-family: forgotten_rg, Verdana, sans-serif;
   color: #3bffff;
+  z-index: 10;
 }
 
 p {
   font-family: "Poppins", sans-serif;
   max-width: 60ch;
+  z-index: 10;
 }
 
 h5 {
   color: #3bffff;
   font-family: forgotten_rg, Verdana, sans-serif;
+  z-index: 10;
 }
 
 header {
