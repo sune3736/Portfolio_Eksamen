@@ -50,6 +50,10 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#menuknap:hover {
+  color: white;
+}
+
 #menu {
   position: fixed;
   list-style-type: none;
@@ -96,12 +100,15 @@ h5 {
 
 a:link {
   text-decoration: none;
-  color: #3bffff;
 }
 
 a:visited {
   text-decoration: none;
   color: #3bffff;
+}
+
+a:hover {
+  color: white;
 }
 
 #video,
@@ -253,6 +260,7 @@ a:visited {
     letter-spacing: 0.1rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    /* margin-left: -0.8 rem; */
     padding: 0;
   }
 
