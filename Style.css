@@ -43,7 +43,7 @@ nav {
 
 #menuknap {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   color: #3bffff;
   font-size: 2rem;
   cursor: pointer;
