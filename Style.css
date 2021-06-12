@@ -31,28 +31,38 @@ body {
 
 /* Burgermenu */
 
+nav {
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+}
+
 .hidden {
-  transform: translateX(-100%);
+  transform: translateX(100%);
   opacity: 0;
 }
 
 #menuknap {
-  display: inline-block;
+  display: flex;
+  justify-content: right;
   color: #3bffff;
   font-size: 2rem;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #menu {
+  position: fixed;
   list-style-type: none;
   transition: transform 0.3s ease-in-out;
-  transform-origin: top left;
+  transform-origin: top;
   background-color: rgb(32, 0, 61);
-  width: 50vw;
+  width: 100vw;
   padding: 1rem;
   font-size: 2rem;
   font-family: forgotten_rg, Verdana, sans-serif;
   letter-spacing: 0.4rem;
+  z-index: 11;
+  text-align: center;
 }
 
 h1 {
@@ -227,23 +237,23 @@ a:visited {
   }
 
   #menu.hidden {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 
   #menu {
+    position: relative;
     display: flex;
     list-style-type: none;
     font-size: 1.4rem;
     font-family: forgotten_rg;
     letter-spacing: 0.4rem;
     background-color: rgb(0, 0, 0);
-    width: 100vw;
-    justify-content: space-between;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    justify-content: space-evenly;
     letter-spacing: 0.1rem;
-    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0;
   }
 
   #first_section {
@@ -300,9 +310,6 @@ a:visited {
     height: auto;
   }
 
-  header nav ul {
-    justify-content: space-evenly;
-  }
   #first_section {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -321,10 +328,7 @@ a:visited {
     grid-row: 3;
     margin-left: 5rem;
   }
-  header {
-    padding: 2rem 11.5rem;
-    background: rgb(0, 0, 0);
-  }
+
   #second_section {
     margin-top: 2rem;
     margin-bottom: 2rem;
