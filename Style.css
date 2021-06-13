@@ -104,7 +104,8 @@ h4 {
 }
 p {
   font-family: "Poppins", sans-serif;
-  max-width: 60ch;
+  color: #3bffff;
+  /* max-width: 60ch; */
   z-index: 10;
   letter-spacing: 0.1rem;
 }
@@ -170,14 +171,6 @@ a:hover {
   margin: 0 auto;
 }
 
-#third_section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .overskrift_wrapper {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -197,14 +190,6 @@ a:hover {
 }
 
 .content_wrapper {
-  background-color: rgb(32, 0, 61);
-  width: 70vw;
-  grid-column: 2/3;
-  grid-row: 1;
-  padding: 2rem;
-  margin-bottom: 3rem;
-}
-.content_wrapper_about {
   background-color: rgb(32, 0, 61);
   width: 70vw;
   grid-column: 2/3;
@@ -264,6 +249,35 @@ a:hover {
   grid-row: 5;
   margin-left: 4rem;
   letter-spacing: 0.2em;
+}
+
+/* UX SITE */
+
+/* #third_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+#third_section {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.tema_info {
+  background-color: rgb(32, 0, 61);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.ipad_video_container {
+  margin-top: 2rem;
+}
+
+#ipad_web {
+  width: 80vw;
 }
 
 /* //MEDIA QUERIES */
