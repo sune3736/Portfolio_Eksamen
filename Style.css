@@ -89,6 +89,19 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  z-index: 10;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-family: forgotten_rg, Verdana, sans-serif;
+  color: #3bffff;
+  z-index: 10;
+  letter-spacing: 0.1rem;
+}
 p {
   font-family: "Poppins", sans-serif;
   max-width: 60ch;
@@ -202,10 +215,32 @@ a:hover {
 
 .info_text {
   color: #3bffff;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-#pic_container img {
-  margin-top: 2rem;
+.pic_forside:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.pic_forside {
+  position: relative;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+/* .text_on_top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  padding: 0.5rem;
+} */
+
+.text_on_top h4 {
+  font-size: 2rem;
 }
 
 .footer_text {
@@ -275,10 +310,6 @@ a:hover {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  #second_section {
-    margin-top: 3rem;
-  }
-
   #video {
     grid-column: 1/9;
     grid-row: 1/9;
@@ -304,7 +335,18 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0.5rem;
+  }
+
+  .pic_forside {
+    position: relative;
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+  .text_on_top h4 {
+    font-size: 1rem;
   }
 }
 @media (min-width: 1200px) {
@@ -345,24 +387,21 @@ a:hover {
   #second_section {
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
-  #pic_container {
-    object-fit: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    padding-right: 2rem;
   }
 
-  #pic_container img {
-    height: 10vw;
-    width: auto;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
-
-  .info_text p {
+  .info_text h3 {
     font-size: 1.3vw;
     max-width: 80vw;
+  }
+
+  .pic_forside {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .text_on_top h4 {
+    font-size: 1.5rem;
   }
 }
 
