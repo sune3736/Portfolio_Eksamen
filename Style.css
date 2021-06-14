@@ -45,7 +45,7 @@ a {
 }
 
 .hidden {
-  transform: translateX(100%);
+  transform: translateY(-200%);
   opacity: 0;
 }
 
