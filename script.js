@@ -22,11 +22,11 @@ function toggleMenu() {
 
 function toggleMere() {
   console.log("toggleMere");
-  document.querySelector(".se_mere_wrapper").classList.toggle("hidden");
+  document.querySelector(".se_mere_wrapper").classList.toggle("hidden_2");
 
   let erSkjult = document
     .querySelector(".se_mere_wrapper")
-    .classList.contains("hidden");
+    .classList.contains("hidden_2");
 
   if (erSkjult == true) {
     document.querySelector(".se_mere").textContent = ">";

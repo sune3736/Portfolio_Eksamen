@@ -45,6 +45,11 @@ a {
 }
 
 .hidden {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.hidden_2 {
   transform: translateY(-10%);
   opacity: 0;
   max-height: 0;
@@ -66,8 +71,7 @@ a {
 #menu {
   position: fixed;
   list-style-type: none;
-  transition-duration: 0.1s;
-  /* transform-origin: top right; */
+  transition-duration: 0.3s;
   background-color: rgb(32, 0, 61);
   padding-top: 2rem;
   padding-bottom: 2rem;
