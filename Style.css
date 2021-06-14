@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   width: 100%;
@@ -41,8 +45,9 @@ a {
 }
 
 .hidden {
-  transform: translateX(100%);
+  transform: translateY(-10%);
   opacity: 0;
+  max-height: 0;
 }
 
 #menuknap {
@@ -61,11 +66,12 @@ a {
 #menu {
   position: fixed;
   list-style-type: none;
-  transition: 0.3s ease-in-out;
-  transform-origin: top;
+  transition-duration: 0.1s;
+  /* transform-origin: top right; */
   background-color: rgb(32, 0, 61);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100vw;
-  padding: 1rem;
   font-size: 2rem;
   font-family: forgotten_rg, Verdana, sans-serif;
   letter-spacing: 0.4rem;
@@ -104,7 +110,7 @@ h4 {
 }
 p {
   font-family: "Poppins", sans-serif;
-  color: #3bffff;
+  color: white;
   /* max-width: 60ch; */
   z-index: 10;
   letter-spacing: 0.1rem;
@@ -205,7 +211,7 @@ a:hover {
 }
 
 .pic_forside:hover {
-  transition: 0.5s;
+  transition-duration: 0.5s;
   transform: scale(1.1);
 }
 
@@ -214,6 +220,7 @@ a:hover {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  transition-duration: 0.5s;
 }
 /* .text_on_top {
   position: absolute;
@@ -272,24 +279,36 @@ a:hover {
   width: 80vw;
 }
 
-#fourth_section {
+#expand_section {
   margin: 0 auto;
   width: 80vw;
+  overflow-x: hidden;
+  margin-top: 2rem;
+  overflow: hidden;
 }
 
 .se_mere {
   display: flex;
   justify-content: space-evenly;
   color: #3bffff;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   transform: rotate(90deg);
 }
 
+.se_mere:hover {
+  color: white;
+}
+
+#expand_section h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .se_mere_wrapper {
-  transform-origin: top;
-  transition: transform 0.3s ease-in-out;
+  /* transform-origin: top; */
+  transition-duration: 0.3s;
 }
 
 /* //MEDIA QUERIES */
