@@ -140,6 +140,10 @@ a:hover {
   color: white;
 }
 
+h4:hover {
+  color: white;
+}
+
 #video,
 #video_2 {
   z-index: -1;
@@ -316,6 +320,12 @@ a:hover {
   padding: 2rem;
   margin-top: 2rem;
   transition-duration: 0.3s;
+}
+.doku_link_1:hover,
+.doku_link_2:hover,
+.doku_link_3:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.1);
 }
 
 .doku_link_1,
@@ -589,10 +599,15 @@ a:hover {
   }
 
   /* SITE'S */
+
   .se_mere_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+    grid-template-columns: 0.3fr 1fr 1fr 1.5fr 0.3fr;
     grid-template-rows: 1fr;
+  }
+
+  #expand_section {
+    width: 70vw;
   }
 
   .tema_info_2 {
