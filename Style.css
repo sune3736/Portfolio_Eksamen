@@ -442,11 +442,13 @@ a:hover {
 
   .se_mere_wrapper {
     display: grid;
-    grid-template-columns: 2fr 0.5fr;
+    grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: 1fr;
   }
 
   .tema_info_2 {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
     grid-column: 1/2;
     grid-row: 1/4;
   }
@@ -536,17 +538,18 @@ a:hover {
   /* SITE'S */
   .se_mere_wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
     grid-template-rows: 1fr;
   }
 
   .tema_info_2 {
-    padding: 1rem;
+    padding-top: 0.5rem;
     grid-column: 2/4;
   }
 
   .doku_wrapper {
     grid-column: 4/5;
+    margin-left: 2rem;
   }
 
   p {
