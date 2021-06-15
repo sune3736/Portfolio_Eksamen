@@ -4,6 +4,7 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenVises");
   document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
   document.querySelector(".se_mere").addEventListener("click", toggleMere);
 }
 
